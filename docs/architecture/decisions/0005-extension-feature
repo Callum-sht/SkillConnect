@@ -1,0 +1,47 @@
+# 0005 In-App Messaging
+
+**Date:** 2026-09-22  
+**Status:** Proposed - Awaiting Tutor Sign-off
+
+## Context
+
+SkillConnect currently allows Seekers to browse services and interact with Providers through bookings, but there is no direct communication channel between the two roles.
+
+For Sprint 2, the team proposes In-App Messaging as an extension feature. This will allow Seekers and Providers to communicate directly within SkillConnect, for example to discuss service details, availability, or booking-related questions.
+
+The feature will support:
+- Starting a conversation between a Seeker and a Provider
+- Sending and receiving messages
+- Viewing conversation history
+- Viewing a list of existing conversations
+- Identifying unread messages
+
+## Decision
+
+Implement an In-App Messaging feature using the existing SkillConnect architecture.
+
+The implementation will use:
+- React and TypeScript for the messaging user interface
+- Spring Boot REST APIs for messaging operations
+- MySQL for persistent storage of conversations and messages
+- The existing authenticated user/session information to identify message participants
+
+Messaging data will be separated into `conversation` and `message` entities. A conversation represents the communication channel between a Seeker and a Provider, while individual messages are stored separately and associated with that conversation.
+
+The initial implementation will use REST-based communication with periodic polling for new messages. This is consistent with the application's existing REST architecture and avoids introducing unnecessary WebSocket complexity for the current project scope.
+
+## Consequences
+
+### Positive
+- Seekers and Providers can communicate without leaving SkillConnect.
+- Messages and conversation history are persisted in the database.
+- The solution integrates with the existing Spring Boot and React architecture.
+- REST-based polling keeps the implementation relatively simple and maintainable.
+- The design can be extended to WebSocket-based real-time messaging in the future if required.
+
+### Negative
+- Polling is not fully real-time and may introduce a short delay before new messages appear.
+- Periodic requests create more HTTP traffic than a WebSocket-based solution.
+- Additional database tables, backend services, APIs, frontend components, and tests are required.
+
+## Sign-off by: jyoti

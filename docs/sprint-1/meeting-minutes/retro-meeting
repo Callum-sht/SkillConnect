@@ -1,0 +1,73 @@
+# Sprint Retro Notes
+
+**Date of the Meeting:** 17/09/2026 
+**Team:** G07-04 
+**Sprint #:** Sprint1
+
+## Attendance
+
+**Attended:**
+- Scrum Master: Hantao Shen
+- Development Team: Henry, Ray, Zitong, Lia
+
+**Absent:**
+- 
+
+---
+
+## 1. What Went Well?
+
+- The team made good progress on the main frontend and backend pages, including authentication, service browsing and booking interfaces. Every User story can be finishied before due day.
+- The initial backend domain model and database relationships were established using Spring Boot, JPA and H2.
+- Team members communicated their progress and divided the Sprint 1 tasks across frontend, backend and documentation work.
+- Git and GitHub were used to share and integrate individual contributions.
+
+
+---
+
+## 2. What Went Not So Well?
+
+- Frontend and backend integration was started later than expected, so some frontend features still relied on mock data.
+- The API contract and backend folder structure were not agreed upon early enough, which led to changes in entity fields, naming and responsibilities.
+- Some user stories were too large to complete comfortably within one sprint.
+- Some members hard to aglin with team code structure, sometime cannot follow the team progress.
+- Team communication are not good enough, some code structure still have some diverfence, and implement at same time lead to crash.
+- Some members did not spend enough time on development, and some tasks were started later than planned, which affected the overall progress.
+- Testing was not completed thoroughly, and some features did not receive sufficient testing and verification.
+
+---
+
+## 3. Lessons Learned
+
+### What should be improved or done differently in the team's process?
+
+- The team should begin Sprint tasks earlier to allow enough time for development, integration, and testing.
+- Progress should be updated continuously instead of being reported only during meetings.
+- When tasks or code change, the relevant team members should be informed promptly to reduce waiting time and duplicated work.
+- Testing should be performed alongside feature development rather than being left until the end of the Sprint.
+
+### Was there anything unexpected that should be taken into account in future sprints?
+
+- Some tasks took longer than expected because of dependencies between team members’ code.
+- Delayed progress updates created unexpected blockers for other team members.
+- Changes to JPA entities affected the generated database schema and related frontend data types.
+- The frontend and backend API contract was not defined early enough, which resulted in changes to field names, data types, and folder structure.
+- Frontend and backend integration required more time than originally planned, and some frontend features still relied on mock data.
+- The H2 in-memory database loses its data whenever the backend application stops, which was not initially expected.
+
+---
+
+## Things to Keep
+
+- Continue actively participating in team meetings and project discussions.
+- Maintain good communication and cooperation between team members.
+- Continue supporting each other and working together when problems arise.
+
+
+## Things to Change
+
+- Team members should provide real-time progress updates instead of waiting until meetings.
+- Assigned tasks should be started earlier to avoid completing too much work near the end of the Sprint.
+- GitHub Projects, team chats, or another shared platform should be used to record progress and blockers.
+- Code should be committed promptly after a feature is completed so other members can review it and continue their work.
+- Sufficient testing time should be allocated to each feature, and testing should be included in the Definition of Done.

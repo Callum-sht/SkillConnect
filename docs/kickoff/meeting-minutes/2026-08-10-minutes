@@ -1,0 +1,32 @@
+# Meeting Minutes
+
+## Weekly Meeting with Team/Supervisor
+
+**Meeting No.:** 4
+
+## Meeting Details
+
+| Detail | Information |
+|---|---|
+| **Date** | 10/08/2026 |
+| **Attendees** | All |
+
+## Information / Decisions
+
+| No. | Item |
+|---:|---|
+| 1 | We need add acceptance criteria for each user stories |
+| 2 | Planning the core feature need to be done in Sprint 1 |
+| 3 | Core feature: Login, Registration, profile, provider dashborad, seeker dashboard, skill detail ..(not yet) |
+| 4 | Next meeting will discuss team members need to be assign which part |
+| 5 | ADRs are: Frontend: React + TypeScript Backend: Java Spring Boot Database: MySQL|
+
+## Action Items
+
+| No. | Item | Who |
+|---:|---|---|---|
+| 1 | add acceptance criteria for key features | All |
+| 2 | Completed ADRs document | Callum Shen|
+| 3 | |
+| 4 | |
+| 5 | |
